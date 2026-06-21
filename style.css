@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:#ff6b35;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header p{
+    margin-top:8px;
+}
+
+.search-box{
+    display:flex;
+    justify-content:center;
+    margin:25px;
+    gap:10px;
+}
+
+.search-box input{
+    width:300px;
+    padding:12px;
+    border:2px solid #ff6b35;
+    border-radius:5px;
+    font-size:16px;
+}
+
+.search-box button{
+    padding:12px 20px;
+    background:#ff6b35;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.search-box button:hover{
+    background:#e85a2c;
+}
+
+.recipe-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.recipe-card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    text-align:center;
